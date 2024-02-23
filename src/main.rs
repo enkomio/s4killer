@@ -193,7 +193,7 @@ fn get_pid(pid_or_name: &str) -> Option<u32> {
 }
 
 fn main() {
-    println!("-=[ S4Killer]=-");    
+    println!("-=[ S4Killer ]=-");    
     if let Some(pid_or_name) = env::args().nth(1) {
         if let Some(pid) = get_pid(&pid_or_name) {
             let driver_filename = drop_driver_file();
